@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-02T15:39:28.433Z",
+    "end": "2023-01-02T15:39:28.463Z",
+    "duration": 30,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ffe54c4c-ea2a-41cb-b8b2-8e0a3f429ffd",
+      "title": "",
+      "fullFile": "C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\spec\\e2e\\firstTest.spec.ts",
+      "file": "\\app\\spec\\e2e\\firstTest.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9637fc42-a3c7-4ca3-804e-5d42a38e54c4",
+          "title": "====================Sample Tests==============================",
+          "fullFile": "C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\spec\\e2e\\firstTest.spec.ts",
+          "file": "\\app\\spec\\e2e\\firstTest.spec.ts",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setup for \"Get Available products in Onboarding \"",
+              "fullTitle": "====================Sample Tests============================== \"before all\" hook: setup for \"Get Available products in Onboarding \"",
+              "timedOut": false,
+              "duration": 26,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "console.log(\"env, \", env);\naccesstokenonbUserAdmin = await restObj.getAccessToken(config.onbUserAdmin, config.Password, config.b2cConfig);\n// await restObj.getAccessTokenInBlock(config.DistySuperUser, config.SuperPassword, config.awsConfig).then((token) => {\n//     return accesstokenDistyUser = token;\n// });\nonbe2eObj = new index_1.E2EONBHelper(accesstokenonbUserAdmin);\nlet commonObj = new index_1.CommonHelper();\n// var val = Math.floor(1000 + Math.random() * 9000);\n// var uuid = val + data.invamount_max;\n// invFileName = `hnb_inv_${uuid}.csv`\n// let invCount = commonObj.getRndInteger(data.inv_min, data.inv_max)\n// console.log(\"invoiceCount\" + invCount);\n// dueDays = commonObj.getRndInteger(9,10);\n//     console.log(\"------------------\", dueDays)\n//    let ingestedData = await digiObj.AddDataToCSV(invFileName, \"auto-hnb-\", invCount, data.invamount_min, data.invamount_max, 40, 20, outputDir, config.distributionFacilityData.hnbParticipantData,\"Distribution\")//, fileTypes.length - 1,data.,2)\n//  let ingestedData = await digiObj.AddDataToCSV(invFileName, \"inv-hnb-auto-pi-\", invCount, data.invamount_min, data.invamount_max, 40, 20, outputDir, config.distributionFacilityData.hnbParticipantData)//, fileTypes.length - 1,data.,2)\n//    invoiceName = ingestedData.invoiceNumber\n//    totalFaceValue = ingestedData.totalfaceValue;",
+              "err": {
+                "message": "Error: require() of ES Module C:\\Liquidx\\LiquidX\\qa-api-onboarding\\node_modules\\node-fetch\\src\\index.js from C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\helper\\rest-api-helper.ts not supported.\nInstead change the require of index.js in C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\helper\\rest-api-helper.ts to a dynamic import() which is available in all CommonJS modules.",
+                "estack": "Error [ERR_REQUIRE_ESM]: require() of ES Module C:\\Liquidx\\LiquidX\\qa-api-onboarding\\node_modules\\node-fetch\\src\\index.js from C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\helper\\rest-api-helper.ts not supported.\nInstead change the require of index.js in C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\helper\\rest-api-helper.ts to a dynamic import() which is available in all CommonJS modules.\n    at C:\\Liquidx\\LiquidX\\qa-api-onboarding\\app\\helper\\rest-api-helper.ts:28:72\n    at async RestAPIHelper.getAccessToken (app\\helper\\rest-api-helper.ts:95:26)\n    at async Context.<anonymous> (app\\spec\\e2e\\firstTest.spec.ts:17:35)",
+                "diff": null
+              },
+              "uuid": "66765aba-77c0-4ae3-9541-9af57fefc30e",
+              "parentUUID": "9637fc42-a3c7-4ca3-804e-5d42a38e54c4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get Available products in Onboarding ",
+              "fullTitle": "====================Sample Tests============================== Get Available products in Onboarding ",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await new Promise((resolve) => setTimeout(async function () {\n    allProducts = await onbe2eObj.getAvailableProductsForONB();\n    console.log(\"********* Get Available Invoices For Facility  ******\", allProducts);\n    resolve(allProducts);\n    console.log(\"invoices - \", allProducts);\n}, 90000));",
+              "err": {},
+              "uuid": "9bded3f5-c92f-42a8-afd9-92352299d52f",
+              "parentUUID": "9637fc42-a3c7-4ca3-804e-5d42a38e54c4",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "9bded3f5-c92f-42a8-afd9-92352299d52f"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 160000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 160000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "e2efirstTest_2023-01-02_21-09-25_execution_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "enableCode": "false",
+        "mochaFile": "results/my-test-output.xml",
+        "reportFilename": "e2efirstTest_2023-01-02_21-09-25_execution_report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
