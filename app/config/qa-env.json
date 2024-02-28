@@ -1,0 +1,23 @@
+{
+    "b2cConfig": {
+        "b2cURI": "https://lqxdev.b2clogin.com/lqxdev.onmicrosoft.com/B2C_1A_TEST2_ROPC/oauth2/v2.0/token?platformCodes=LQX",
+        "clientId": "bfaf9ba8-f126-470c-8f36-8f38d9bc9d7b",
+        "scope": "https://lqxdev.onmicrosoft.com/qa-msal2-api-scope/access_as_user"
+
+
+    },
+
+    "onbBaseURI": "https://onbapi-qa.liquidx.com",
+    "onbUserAdmin": "lqxscf+scf_api_platform_test2@gmail.com",
+    "Password": "Liquidx123",
+    "entBaseURI": "https://entapi-qa.liquidx.com",
+    "x-platform-code": "LQX",
+    "blobcontainer": "api-automation",
+    "platformCode": "LQX",
+    
+    "db360": {
+        "username": "qa_test_automation",
+        "password": "wJDSjvnyAqHQt94WJs",
+        "server": "lqx-mssql-use2-qa.database.windows.net"
+    }
+}
